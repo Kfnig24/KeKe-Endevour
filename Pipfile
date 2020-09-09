@@ -1,0 +1,16 @@
+[[source]]
+name = "KéKé Endevour"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+flask = "*"
+pandas = "*"
+numpy = "*"
+sklearn = "*"
+gunicorn = "*"
+
+[requires]
+python_version = "3.8.5"

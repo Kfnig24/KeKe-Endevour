@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+#recording{border-radius: 16px}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+.apps {text-decoration: none;}
+footer {background-color: black; color: white}
+.nav {border-radius: 8px}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-blue w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-blue" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="sites_associé" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Sites/Système associés</a>
+    <a href="aide" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Aide</a>
+    <a href="edith" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Edith</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="index" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="sites_associé" class="w3-bar-item w3-button w3-padding-large">Sites/Système associés</a>
+    <a href="aide" class="w3-bar-item w3-button w3-padding-large">Aide</a>
+    <a href="edith" class="w3-bar-item w3-button w3-padding-large">Edith</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-blue w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">Que puis-je pour vous ?</h1>
+  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" id="recording"><a href="edith" class="apps">Appuyer pour accéder à Edith</a></button>
+</header>
+
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i></i>
+    </div>
+
+    <div class="w3-twothird">
+      <h1>Sites/Système associés</h1>
+      <h5 class="w3-padding-32">Les Sites Associés sont des sites web ou applications qu'utilise l'EIMLB pour différentes tâches comme cahier de cours ou planning.</h5>
+
+      <p class="w3-text-grey"><div>
+          <h5 class="w3-padding-32"><a href="https://www.onenote.com/hrd?wdorigin=ondcauth2&wdorigin=poc" class="apps">OneNote :</a></h5>
+          <p class="w3-text-grey">OneNote est une application et un site web de la compagnie Microsoft. Elle permet de créer des "blocks-notes" où sont composés de plusieurs "sections" qui sont elle-même composées de une ou plusieurs "notes" où l'ont peut ajouter tous types de contenu comme du texts, fichiers, ... Dans le cas de l'EIMLB, OneNote sert de cahier de classe où chaque élève de la même classe peut travailler dans une section privé où seul le professeur et lui ont accès.</p>
+      </div></p>
+      <a href="sites_associé">Voir plus</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i></i>
+    </div>
+
+    <div class="w3-twothird">
+      <h1>Edith</h1>
+      <h5>Edith est un programme qui peut prédire une note à partir des deux précédentes. Attention, le programme ne prends pas en compte le temps de travail et les absences !</h5>
+      <a href="edith">Essayer-le maintenant</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+ </div>
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+ <p>Propriety of <a href="https://www.eimlb.lu/" target="_blank">eimlb.lu</a></p>
+</footer>
+
+<script src="main.js"></script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyC_jAJQQZrOFs8eo4aFecjH2OK-1U7dgbQ",
+    authDomain: "keke-endevour.firebaseapp.com",
+    databaseURL: "https://keke-endevour.firebaseio.com",
+    projectId: "keke-endevour",
+    storageBucket: "keke-endevour.appspot.com",
+    messagingSenderId: "906104472953",
+    appId: "1:906104472953:web:9a241cb01b068934a4dba8",
+    measurementId: "G-8R5PE397HZ"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+</body>
+</html>

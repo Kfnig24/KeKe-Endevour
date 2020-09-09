@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Aide</title>
+<style type="text/css">
+	.apps {text-decoration: none;}
+	footer {background-color: black; color: white}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-blue w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-blue" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="sites_associé" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Sites/Système associés</a>
+    <a href="aide" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Aide</a>
+    <a href="edith" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Edith</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="index" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="sites_associé" class="w3-bar-item w3-button w3-padding-large">Sites/Système associés</a>
+    <a href="aide" class="w3-bar-item w3-button w3-padding-large">Aide</a>
+    <a href="edith" class="w3-bar-item w3-button w3-padding-large">Edith</a>
+  </div>
+</div>
+
+
+<!-- Header -->
+<header class="w3-container w3-blue w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">Aide</h1>
+</header>
+
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <p class="w3-text-grey"><div>
+          <h5 class="w3-padding-32"><a href="index" class="apps">Home</a></h5>
+          <p class="w3-text-grey">Dans la parti supérieur rouge se trouve un bouton, la fonction de ce bouton est un programme de machine learning nommé Edith. Sur la liste, dans la parti du bas, se trouve des présentations des autres fonctionnalités du site. Sur chaque titre de fonction, il y a un lien vers la page en questions.<p>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <p class="w3-text-grey"><div>
+          <h5 class="w3-padding-32"><a href="sites_associé" class="apps">Sites/Système associés</a></h5>
+          <p class="w3-text-grey">La page Sites/Système est composé d'une liste de toutes les applications, sites et système principales que l'école utilise au niveau pédagogique. Chaque titre de la liste est un lien vers un site web où se trouve une explication plus détaillé.<p>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+ </div>
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+ <p>Propriety of <a href="https://www.eimlb.lu/" target="_blank">eimlb.lu</a></p>
+</footer>
+
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+</body>
+</html>
