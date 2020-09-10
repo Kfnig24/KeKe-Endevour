@@ -6,7 +6,7 @@ import pandas as pd
 import pickle
 
 def PredictNote(G1, G2):
-    data = pd.read_csv("student-mat.csv", sep=";")
+    data = pd.read_csv("./student-mat.csv", sep=";")
 
     data = data[["G1", "G2", "G3"]]
 
