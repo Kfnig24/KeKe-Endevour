@@ -34,7 +34,3 @@ def aide():
 @app.route("/index")
 def index():
     return render_template("index.html")
-
-#MARK : main
-if __name__ == '__main__':
-    app.run()
