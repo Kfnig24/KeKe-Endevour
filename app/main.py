@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from PredictNote import PredictNote
+from .PredictNote import PredictNote
 
 app = Flask(__name__)
 
