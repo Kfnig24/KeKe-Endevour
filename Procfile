@@ -1,1 +1,1 @@
-web: gunicorn -b 127.0.0.1:8080 wsgi:app
+web: gunicorn -b 127.0.0.1:${PORT} wsgi:app
