@@ -4,9 +4,10 @@ from sklearn.utils import shuffle
 import numpy as np
 import pandas as pd
 import pickle
+import os
 
 def PredictNote(G1, G2):
-    data = pd.read_csv("./student-mat.csv", sep=";")
+    data = pd.read_csv(os.path.join("student-mat.csv"))
 
     data = data[["G1", "G2", "G3"]]
 

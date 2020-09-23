@@ -19,9 +19,9 @@ def predict_note():
     else:
         return render_template("edith.html")
 
-@app.route("/edith")
-def edith():
-    return render_template("edith.html")
+#@app.route("/edith")
+#def edith():
+ #   return render_template("edith.html")
 
 @app.route("/sites_associe")
 def sites_associe():
